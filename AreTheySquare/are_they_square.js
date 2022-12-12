@@ -35,17 +35,13 @@ const isSquare = (arr) => {
   if (arr.length == 0) {
     return result;
   }else {
+    result = true;
     for (i = 0; i < arr.length; i++) {
     let a = Math.sqrt(arr[i]);
-      arr[i] = (arr[i] == a*a) ? true : false; 
-    };
-    for (i = 0; i < arr.length; i++) {
-      if (arr[i] == true) {
-        result = true;
-      } else {
+      if (arr[i] !== a*a) {
         result = false;
         break;
-      } 
+      }
     };
     return result;
   }
