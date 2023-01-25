@@ -30,7 +30,7 @@ var list1 = [
 
 
 function isRubyComing(list) {
-  return list.filter(dev => dev.language == 'Ruby').length > 0;
+  return JSON.stringify(list).includes('Ruby');
 }
 
 isRubyComing(list1);
