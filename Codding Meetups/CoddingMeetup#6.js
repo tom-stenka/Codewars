@@ -31,9 +31,9 @@ var list1 = [
   { firstName: 'Hanna', lastName: 'L.', country: 'Hungary', continent: 'Europe', age: 65, language: 'JavaScript' },
 ];
 
-const jsdevs = (list) => {
+const isSameLanguage = (list) => {
   return list.every((developer) => {
-      return developer.language === 'JavaScript';
+      return developer.language === list[0].language;
   });
 }
 
